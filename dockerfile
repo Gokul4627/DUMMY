@@ -8,4 +8,6 @@ EXPOSE 80
 
 #CMD ["apachectl -D", "FOREGROUD"]
 
-CMD ["apache2ctl", "-D", "FOREGROUND"]
+#CMD ["apache2ctl", "-D", "FOREGROUND"]
+
+CMD ["/bin/sh", "-c", "apachectl -D FOREGROUND"]
