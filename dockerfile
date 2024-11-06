@@ -27,7 +27,7 @@ FROM alpine:latest
 
 RUN apk add --no-cache nginx
 
-COPY . /usr/share/nginx/html/
+COPY .. /usr/share/nginx/html/
 
 COPY nginx.conf /etc/nginx/nginx.conf
 
